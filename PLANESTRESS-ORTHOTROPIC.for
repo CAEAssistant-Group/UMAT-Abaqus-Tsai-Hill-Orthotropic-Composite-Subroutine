@@ -10,7 +10,7 @@ C      CAE Assisitant Services:
 C      Toturial Packages,Consultancy,Articles,Q&A,Video Gallery,Online Course
 C      ######################################################################
 C      Need help with your project? 
-C      You can get initial free consultation from (caeassistant-com)
+C      You can get initial free consultation from (our website caeassistant com)
 C      ###################################################################### 	
       SUBROUTINE UMAT(STRESS,STATEV,DDSDDE,SSE,SPD,SCD,
      1 RPL,DDSDDT,DRPLDE,DRPLDT,
@@ -75,7 +75,9 @@ C===============================================================================
          DO I=1,3
           Z=0.0
            DO J=1,3
-            !Hidden Content: You can get the complete code from our website for free. CAE Assistant com
+           Z=Z+DDSDDE(I,J)*DSTRAN(J)
+           END DO
+          STRESS(I)=STRESS(I)+Z
          END DO     
       
 C=================================================================================
@@ -101,7 +103,10 @@ C===============================================================================
         F66=1.0/(SU12**2.0)
         F6=0.0
 C       FAILURE SURFACE
-        !Hidden Content: You can get the complete code from our website for free. CAE Assistant com                 
+        F=F11*(STRESS(1))**2+F22*((STRESS(2))**2)+F66*((STRESS(3))**2
+     1)+2.0*F12*STRESS(1)*STRESS(2)+F1*STRESS(1)+F2*STRESS(2)+F6*
+     2STRESS(3)
+        STATEV(1)=SQRT(F)                 
 
       RETURN
       END
