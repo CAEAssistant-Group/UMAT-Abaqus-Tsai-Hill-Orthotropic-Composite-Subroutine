@@ -18,4 +18,5 @@ More details about this topic are freely available on our website, with the link
 
 Additionally, we have included a free PDF that provides a comprehensive explanation of this project.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/0326d848-b176-4a61-9855-e217690fda2b)
+
