@@ -20,3 +20,6 @@ Additionally, we have included a free PDF that provides a comprehensive explanat
 
 ![image](https://github.com/user-attachments/assets/0326d848-b176-4a61-9855-e217690fda2b)
 
+We also have a free GitHub project on damage analysis of sandwich panels under impact, which can be downloaded for free at the link below:
+
+https://github.com/CAEAssistant-Group/Abaqus-Johnson-Cook-Sandwich-Panel-Impact-Under-TNT-Blast
